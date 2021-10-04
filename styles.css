@@ -13,7 +13,7 @@
 
     width: 100%;
     height: 100%;
-    background-color: #94bdef;
+    background-color: #393939;
 }
 
 #container{
@@ -22,9 +22,10 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 400px;
+    width: 350px;
     height: 550px;
-    border: 3px solid black;
+    background: rgba(255, 255, 255, 0.082);
+    border-radius: 50px;
 }
 
 .containerTap{
@@ -40,14 +41,19 @@
     width: 350px;
     height: 85px;
     border-radius: 50px;
-    background-color: #cfcfe5;
+    background: rgb(255,255,255);
+    background: linear-gradient(188deg, rgb(116, 137, 146) 0%, rgba(67,69,71,1) 100%);
+    border: 2px solid;
 }
 
 #secondPiece{
     width: 75px;
     height: 75px;
     border-radius: 0px 0px 20px 20px;
-    background-color: #cfcfe5;
+    background: rgb(255,255,255);
+    background: linear-gradient(339deg, rgb(116, 137, 146) 0%, rgba(67,69,71,1) 100%);
+    border: 2px solid;
+    border-top: none;
 }
 
 .waterKeysRotor{
@@ -56,20 +62,40 @@
     border-radius: 50px;
     display: block;
     margin: 20px;
-    background-color: #cfcfe5;
+    background: rgb(255,255,255);
+    background: linear-gradient(188deg, rgb(142, 152, 161) 0%, rgba(67,69,71,1) 100%);
 }
 
 .waterKeys{
     width: 50px;
     height: 150px;
     border-radius: 50px;
-    background-color: #cbcbd3;
+    background: rgb(255,255,255);
+    background: linear-gradient(188deg, rgb(164, 173, 180) 0%, rgba(67,69,71,1) 100%);
+    border: 2px solid;
+
+}
+
+#rotor-1{
+    transform: rotateZ(30deg);
 }
 
 #glass{
-    border-top: 200px solid rgb(61, 106, 124); 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    border-top: 200px solid rgb(255 255 255 / 39%); 
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     height: 0;  
     width: 175px;
 } 
+
+#glass .fill{
+    border-top: 200px solid rgb(255 255 255 / 39%);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 175px;
+}
