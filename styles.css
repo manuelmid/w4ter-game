@@ -41,21 +41,19 @@
     width: 350px;
     height: 85px;
     border-radius: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(188deg, rgb(116, 137, 146) 0%, rgba(67,69,71,1) 100%);
     border: 2px solid;
-
-    background: rgb(62,39,5);
-    background: linear-gradient(0deg, rgba(62,39,5,1) 0%, rgba(131,84,13,1) 27%, rgba(189,193,16,1) 62%);
 }
 
 #secondPiece{
     width: 75px;
     height: 75px;
     border-radius: 0px 0px 20px 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(339deg, rgb(116, 137, 146) 0%, rgba(67,69,71,1) 100%);
     border: 2px solid;
     border-top: none;
-    background: rgb(62,39,5);
-    background: linear-gradient(180deg, rgba(62,39,5,1) 0%, rgba(131,84,13,1) 27%, rgba(189,193,16,1) 62%);
-
 }
 
 .waterKeysRotor{
@@ -64,17 +62,17 @@
     border-radius: 50px;
     display: block;
     margin: 20px;
-    background: rgb(62,39,5);
-    background: linear-gradient(0deg, rgba(62,39,5,1) 0%, rgba(131,84,13,1) 27%, rgba(189,193,16,1) 62%);
+    background: rgb(255,255,255);
+    background: linear-gradient(188deg, rgb(142, 152, 161) 0%, rgba(67,69,71,1) 100%);
 }
 
 .waterKeys{
     width: 50px;
     height: 150px;
     border-radius: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(188deg, rgb(164, 173, 180) 0%, rgba(67,69,71,1) 100%);
     border: 2px solid;
-    background: rgb(62,39,5);
-    background: linear-gradient(0deg, rgba(62,39,5,1) 0%, rgba(131,84,13,1) 27%, rgba(189,193,16,1) 62%);
 
 }
 
@@ -100,4 +98,9 @@
     border-right: 40px solid transparent;
     height: 0;
     width: 175px;
+}
+
+.buttons{
+    width: 100px;
+    height: 100px;
 }
