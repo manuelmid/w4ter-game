@@ -76,9 +76,9 @@
 
 }
 
-#rotor-1{
-    transform: rotateZ(30deg);
-}
+ #rotor-1{
+    /* animation: rotar 1s linear infinite; */
+} 
 
 #glass{
     display: flex;
@@ -104,4 +104,13 @@
     width: 100px;
     height: 100px;
     color: black;
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(90deg);
+    }
 }
