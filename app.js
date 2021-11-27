@@ -8,7 +8,7 @@ console.log(button1);
 console.log(button2);
 
 button1.addEventListener('click', function(){
-    rotorOne.style.animation = "rotar 1s linear infinite";
+    rotorOne.style.animation = "rotar 1s linear";
 });
 
 button2.addEventListener('click', function(){
