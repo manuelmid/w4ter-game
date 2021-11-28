@@ -106,11 +106,19 @@
     color: black;
 }
 
-@keyframes rotar {
+@keyframes rotarL {
     0%{
         transform: rotateZ(0deg);
     }
     100%{
         transform: rotateZ(90deg);
+    }
+}
+@keyframes rotarR {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-90deg);
     }
 }

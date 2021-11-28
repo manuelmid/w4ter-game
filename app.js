@@ -8,9 +8,9 @@ console.log(button1);
 console.log(button2);
 
 button1.addEventListener('click', function(){
-    rotorOne.style.animation = "rotar 1s linear";
+    rotorOne.style.animation = "rotarL 1s linear";
 });
 
 button2.addEventListener('click', function(){
-    rotorTwon.style.transform = "rotateZ(-90deg)";
+    rotorTwon.style.animation = "rotarR 1s linear";
 });
