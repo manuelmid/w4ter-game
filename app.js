@@ -1,4 +1,4 @@
-var item = document.getElementById("warm");
+var button1 = document.getElementById("warm");
 var button2 = document.getElementById("cold");
 
 var rotorOne = document.getElementById("rotor-1");
@@ -7,26 +7,23 @@ var rotorTwon = document.getElementById("rotor-2");
 
 // let item = document.querySelector("#item");
 
-    let timerID;
+let timerID;
     let counter = 0;
 
     let pressHoldEvent = new CustomEvent("pressHold");
 
-    // Increase or decreae value to adjust how long
-    // one should keep pressing down before the pressHold
-    // event fires
     let pressHoldDuration = 50;
 
     // Listening for the mouse and touch events    
-    item.addEventListener("mousedown", pressingDown, false);
-    item.addEventListener("mouseup", notPressingDown, false);
-    item.addEventListener("mouseleave", notPressingDown, false);
+    button2.addEventListener("mousedown", pressingDown, false);
+    button2.addEventListener("mouseup", notPressingDown, false);
+    button2.addEventListener("mouseleave", notPressingDown, false);
 
-    item.addEventListener("touchstart", pressingDown, false);
-    item.addEventListener("touchend", notPressingDown, false);
+    button2.addEventListener("touchstart", pressingDown, false);
+    button2.addEventListener("touchend", notPressingDown, false);
 
     // Listening for our custom pressHold event
-    item.addEventListener("pressHold", doSomething, false);
+    button2.addEventListener("pressHold", doSomething, false);
 
     function pressingDown(e) {
       // Start the timer
@@ -56,20 +53,13 @@ var rotorTwon = document.getElementById("rotor-2");
         counter++;
       } else {
         console.log("Press threshold reached!");
-        item.dispatchEvent(pressHoldEvent);
+        button2.dispatchEvent(pressHoldEvent);
       }
     }
 
     function doSomething(e) {
       console.log("pressHold event fired!");
     }
-
-
-
-
-
-
-
 
 
 
@@ -80,6 +70,8 @@ button1.addEventListener('click', function(){
     rotorOne.style.animation = "rotarL 1s linear";
 });
 
-button2.addEventListener('click', function(){
-    rotorTwon.style.transform = "rotateZ(-90deg)";
-});
+// button2.addEventListener('click', function(){
+//     rotorTwon.style.transform = "rotateZ(-90deg)";
+// });
+
+button1.addEventListener("mousedown", pressingDown, false,);
