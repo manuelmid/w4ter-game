@@ -66,7 +66,7 @@ let timerID;
 console.log(button1);
 console.log(button2);
 
-button1.addEventListener('click', function(){
+button2.addEventListener('click', function(){
     rotorOne.style.animation = "rotarL 1s linear";
 });
 
