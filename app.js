@@ -3,16 +3,13 @@ var button2 = document.getElementById("cold");
 var rotorOne = document.getElementById("rotor-1");
 var rotorTwon = document.getElementById("rotor-2");
 
-let deg = 30;
-
-// let item = document.querySelector("#item");
-
-let timerID;
+let pressHoldDuration = 90;
 let counter = 0;
+let deg = 0;
+let timerID;
 
 let pressHoldEvent = new CustomEvent("pressHold");
 
-let pressHoldDuration = 90;
 
 // Listening for the mouse and touch events    
 button1.addEventListener("mousedown", pressingDown);
@@ -24,10 +21,6 @@ button2.addEventListener("mouseup", notPressing);
 // Listening for our custom pressHold event
 button2.addEventListener("pressHold", doSomething);
 
-  while(button1.cli){
-    console.log("gg")
-  }
-
     function pressingDown(e) {
       // Start the timer
 
@@ -38,17 +31,19 @@ button2.addEventListener("pressHold", doSomething);
     }
 
     function notPressing(){
-      console.log("up!!")
-      counter = 0;
+      console.log("up!!");
+      //counter = 0;
     }
 
     function timer() {
       console.log("Timer tick!");
-
+      //mientras Onclick Counter++
       if (counter < pressHoldDuration) {
         timerID = requestAnimationFrame(timer);
+        //mientras Onclick Counter++
         counter++;
         deg = counter;
+        //Creo que aqui necesito un ciclo while 
         rotorOne.style.rotate = deg + 'deg';
       } else {
         console.log("Press threshold reached!");
