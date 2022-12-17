@@ -25,9 +25,9 @@ button2.addEventListener("pressHold", doSomething);
       // Start the timer
 
       requestAnimationFrame(timer);
-
+      console.log(timer);
       e.preventDefault();
-
+      console.log(e);
     }
 
     function notPressing(){
