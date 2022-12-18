@@ -12,16 +12,16 @@ let pressHoldEvent = new CustomEvent("pressHold");
 
 
 // Listening for the mouse and touch events    
-button1.addEventListener("mousedown", pressingDown);
-button1.addEventListener("mouseup", notPressing);
+button1.addEventListener("mousedown", clickDown);
+button1.addEventListener("mouseup", clickUp);
 
-button2.addEventListener("mousedown", pressingDown);
-button2.addEventListener("mouseup", notPressing);
+button2.addEventListener("mousedown", clickDown);
+button2.addEventListener("mouseup", clickUp);
 
 // Listening for our custom pressHold event
 button2.addEventListener("pressHold", doSomething);
 
-    function pressingDown(e) {
+    function clickDown(e) {
       // Start the timer
 
       requestAnimationFrame(timer);
@@ -30,7 +30,7 @@ button2.addEventListener("pressHold", doSomething);
       console.log(e);
     }
 
-    function notPressing(){
+    function clickUp(){
       console.log("up!!");
       //counter = 0;
     }
