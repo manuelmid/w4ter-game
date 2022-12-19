@@ -3,7 +3,7 @@ var button2 = document.getElementById("cold");
 var rotorOne = document.getElementById("rotor-1");
 var rotorTwon = document.getElementById("rotor-2");
 
-let pressHoldDuration = 90;
+let pressHoldDuration = 10000;
 let counter = 0;
 let deg = 0;
 let timerID;
@@ -25,9 +25,7 @@ button2.addEventListener("pressHold", doSomething);
       // Start the timer
 
       requestAnimationFrame(timer);
-      console.log(timer);
       e.preventDefault();
-      console.log(e);
     }
 
     function clickUp(){
@@ -38,12 +36,12 @@ button2.addEventListener("pressHold", doSomething);
     function timer() {
       console.log("Timer tick!");
       //mientras Onclick Counter++
+
       if (counter < pressHoldDuration) {
         timerID = requestAnimationFrame(timer);
         //mientras Onclick Counter++
         counter++;
         deg = counter;
-        //Creo que aqui necesito un ciclo while 
         rotorOne.style.rotate = deg + 'deg';
       } else {
         console.log("Press threshold reached!");
