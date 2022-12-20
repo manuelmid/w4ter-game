@@ -24,7 +24,7 @@ button2.addEventListener("pressHold", doSomething);
     function clickDown(e) {
       // Start the timer
 
-      requestAnimationFrame(timer);
+      //requestAnimationFrame(timer);
       e.preventDefault();
     }
 
