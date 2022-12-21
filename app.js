@@ -54,6 +54,12 @@ button2.addEventListener("pressHold", doSomething);
       console.log("pressHold event fired!");
     }
 
+
+    function print(e){
+      let impri = document.getElementById(e).childNodes;
+      console.log(impri);
+    }
+
 // button2.addEventListener('click', function(){
 //     rotorTwon.style.transform = "rotateZ(-90deg)";
 // });
