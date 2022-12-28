@@ -15,8 +15,8 @@ let pressHoldEvent = new CustomEvent("pressHold");
 button1.addEventListener("mousedown", clickDown);
 button1.addEventListener("mouseup", clickUp);
 
-button2.addEventListener("mousedown", clickDown);
-button2.addEventListener("mouseup", clickUp);
+//button2.addEventListener("mousedown", clickDown);
+//button2.addEventListener("mouseup", clickUp);
 
 // Listening for our custom pressHold event
 button2.addEventListener("pressHold", doSomething);
