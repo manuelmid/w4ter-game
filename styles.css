@@ -34,6 +34,16 @@
     align-items: center;
 }
 
+#bola{
+    position: absolute;
+    margin-left: 500px;
+    height: 20px;
+    width: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
 #firstPiece{
     display: flex;
     justify-content: space-between;

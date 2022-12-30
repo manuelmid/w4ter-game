@@ -2,6 +2,7 @@ var button1 = document.getElementById("warm");
 var button2 = document.getElementById("cold");
 var rotorOne = document.getElementById("rotor-1");
 var rotorTwon = document.getElementById("rotor-2");
+var bola = document.getElementById("bola");
 
 let pressHoldDuration = 10000;
 let counter = 0;
@@ -26,11 +27,11 @@ button2.addEventListener("pressHold", doSomething);
       //Check this
       requestAnimationFrame(timer);
       e.preventDefault();
+
     }
 
     function clickUp(){
       console.log("up!!");
-      //counter = 0;
     }
 
     function timer() {
@@ -43,6 +44,8 @@ button2.addEventListener("pressHold", doSomething);
         counter++;
         deg = counter;
         rotorOne.style.rotate = deg + 'deg';
+        bola.style.width = deg;
+        //bola.style.height = deg;
       } else {
         console.log("Press threshold reached!");
         button2.dispatchEvent(pressHoldEvent);
