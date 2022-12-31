@@ -45,7 +45,7 @@ button2.addEventListener("pressHold", doSomething);
         deg = counter;
         rotorOne.style.rotate = deg + 'deg';
         bola.style.width = deg;
-        //bola.style.height = deg;
+        bola.style.height = deg;
       } else {
         console.log("Press threshold reached!");
         button2.dispatchEvent(pressHoldEvent);
