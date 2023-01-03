@@ -64,7 +64,6 @@ button2.addEventListener("pressHold", doSomething);
       console.log(impri);
     }
 
-// button2.addEventListener('click', function(){
-//     rotorTwon.style.transform = "rotateZ(-90deg)";
-// });
-
+function saludar(){
+  console.log("hihi")
+}
