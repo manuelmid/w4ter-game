@@ -64,6 +64,7 @@ button2.addEventListener("pressHold", doSomething);
       console.log(impri);
     }
 
-function saludar(){
-  console.log("hihi")
-}
+    function imprime(e){
+      let con= document.getElementById(e).children;
+      console.log(con);
+    }
