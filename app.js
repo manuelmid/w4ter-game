@@ -70,7 +70,5 @@ button2.addEventListener("pressHold", doSomething);
       let aa = document.createElement("div");
           aa.style.width = "400px";
           aa.style.height = "400px";
-          aa.style.border = "2px solid black";
-          aa.style.background = "black";
-      document.body.append(aa)
+      document.body.append(aa);
     }
