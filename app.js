@@ -26,6 +26,7 @@ button2.addEventListener("pressHold", doSomething);
       // Start the timer
       //Check this
       requestAnimationFrame(timer);
+      console.log("this is the time: "+ timer)
       e.preventDefault();
 
     }
@@ -60,15 +61,20 @@ button2.addEventListener("pressHold", doSomething);
 
 
     function print(e){
-      let impri = document.getElementById(e).childNodes;
+      let impri = document.getElementById(e);
       console.log(impri);
     }
 
     function imprime(e){
-      let con= document.getElementById(e).children;
+      let con= document.getElementById(e);
       console.log(con);
       let aa = document.createElement("div");
           aa.style.width = "400px";
           aa.style.height = "400px";
       document.body.append(aa);
     }
+
+var fill = document.querySelector(".fill")
+
+fill.style.borderTop = "200px solid rgb(255 255 255 / 39%)"
+    console.log(fill.style.borderTop)
