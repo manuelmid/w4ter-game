@@ -5,7 +5,7 @@ var waterOut = document.getElementById("water")
 const rotor1 = document.getElementById("rotor-1");
 const rotor2 = document.getElementById("rotor-2");
 
-let water = 160;
+let water = 20;
 let activador = false;
 let intervalo;
 let intervaloOut;

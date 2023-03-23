@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    -webkit-user-select: none; /* Para navegadores basados en webkit */
+    -moz-user-select: none; /* Para navegadores basados en Mozilla */
+    -ms-user-select: none; /* Para navegadores basados en Microsoft */
+    user-select: none; /* Propiedad genérica */
 }
 
 #mainBox{
@@ -153,8 +162,9 @@
     height: 100px;
     border: 2px solid black;
     border-radius: 40px;
-    font-family: fantasy, 'Courier New', Courier, monospace;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: large;
+    cursor: pointer;
 }
 
 .buttons#warm{
@@ -162,6 +172,13 @@
 }
 .buttons#cold{
     background-color: #31b1e6b3;
+}
+
+#information{
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    border: 2px solid black;
 }
 
 @keyframes rotarL {
