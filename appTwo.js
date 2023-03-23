@@ -66,6 +66,8 @@ function animarElemento() {
   
     // Eliminar el EventListener del documento para detener la detección del evento mouseup
     document.removeEventListener('mouseup', detenerAnimacion);
+    document.removeEventListener('touchend', detenerAnimacion);
+
     clearInterval(intervalo);
     waterOut.classList.remove('warmW');
     waterOut.classList.remove('coldW');
@@ -75,6 +77,22 @@ function animarElemento() {
     }
 
 }
+
+//MOBIL CONFIG
+button1.addEventListener('touchstart', () => {
+    activador = true;
+    animarElemento();
+  
+    document.addEventListener('touchend', detenerAnimacion);
+  });
+  
+  button2.addEventListener('touchstart', () => {
+    activador = false;
+    animarElemento();
+  
+    document.addEventListener('touchend', detenerAnimacion);
+  });
+  
 
 /* setTimeout(function() {
     clearInterval(intervalo);
