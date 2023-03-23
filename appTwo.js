@@ -31,9 +31,10 @@ function moreWater(){
                 let markValue = markRect.top;
 
                 if(fillValue < markValue){
-                    console.log("NOS FUIMOS");
+                    alert("You have reached the limit")
                     clearInterval(intervalo);
                     detenerAnimacion();
+                    console.log("NOS FUIMOS");
                 }
 
                 if(activador){

@@ -232,26 +232,16 @@ body{
 
 @media only screen and (max-width: 600px) {
     #container{
-        width: 230px;
+        width: 340px;
     }
     #firstPiece{
-        width: 220px;
-        height: 50px;
-    }
-    #secondPiece {
-        width: 50px;
-        height: 55px;
-    }
-    #water{
-        margin-top: 100px;
-    }
-    .waterKeysRotor{
-        width: 30px;
-        height: 30px;
+        width: 300px;
     }
     .waterKeys{
-        width: 30px;
-        height: 80px;
+        height: 130px;
+    }
+    #mark{
+        top: 400px;
     }
 
     @keyframes coldW {
