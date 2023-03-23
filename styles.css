@@ -66,6 +66,29 @@
     border-top: none;
 }
 
+#water{
+    position: absolute;
+    width: 30px;
+    margin-top: 160px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.coldW{
+    animation: coldW 0.6s forwards;
+}
+.warmW{
+    animation: warmW 0.6s forwards;
+}
+
+@keyframes coldW {
+    from {border-top: 0px solid #0a3848}
+    to {border-top: 220px solid #00BFFF}
+}
+@keyframes warmW {
+    from {border-top: 0px solid #ff0404}
+    to {border-top: 220px solid #00BFFF}
+}
+
 .waterKeysRotor{
     width: 50px;
     height: 50px;
@@ -90,30 +113,55 @@
     /* animation: rotar 1s linear infinite; */
 } 
 
-#glass{
+#glassContainer{
     display: flex;
     align-items: flex-end;
     justify-content: center;
 
-    border-top: 200px solid rgb(255 255 255 / 39%); 
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    height: 0;  
-    width: 175px;
+    height: ;  
+    width: 200px;
+    
 } 
 
-#glass .fill{
-    border-top: 200px solid rgb(255 255 255 / 39%);
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
+#glass{
+    z-index: 1;
+    opacity: 60%;
+}
+
+#glassContainer .fill{
+    position: absolute;
+    padding-bottom: 30px;
+    border-top: 20px solid #00BFFF;
+
+
+    border-radius: 20%;
     height: 0;
-    width: 175px;
+    width: 100px;
+}
+
+.fillTop{
+    width: 100px;
+    height: 34px;
+    background-color: #00BFFF;
+    position: absolute;
+    border-radius: 50%;
+    margin-bottom: 13px;
 }
 
 .buttons{
     width: 100px;
     height: 100px;
-    color: black;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-family: fantasy, 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.buttons#warm{
+    background-color: #e63131b3;
+}
+.buttons#cold{
+    background-color: #31b1e6b3;
 }
 
 @keyframes rotarL {
@@ -132,3 +180,26 @@
         transform: rotateZ(-90deg);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #container{
+        width: 230px;
+    }
+    #firstPiece{
+        width: 220px;
+        height: 50px;
+    }
+    #secondPiece {
+        width: 50px;
+        height: 55px;
+    }
+    .waterKeysRotor{
+        width: 30px;
+        height: 30px;
+    }
+    .waterKeys{
+        width: 30px;
+        height: 80px;
+    }
+
+  }
