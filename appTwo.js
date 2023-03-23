@@ -1,7 +1,12 @@
 var button1 = document.getElementById("warm");
 var button2 = document.getElementById("cold");
-var fill = document.getElementById("fill")
-var waterOut = document.getElementById("water")
+var fill = document.getElementById("fill");
+var mark = document.getElementById("mark");
+var waterOut = document.getElementById("water");
+
+var waterTemperatur = document.getElementById("waterTemperatur");
+var waterTemperaturValue = parseInt(waterTemperatur.innerText);
+
 const rotor1 = document.getElementById("rotor-1");
 const rotor2 = document.getElementById("rotor-2");
 
@@ -10,13 +15,39 @@ let activador = false;
 let intervalo;
 let intervaloOut;
 
-    
+let temperatura = 30;
+
+
+
+
 function moreWater(){
     intervalo = setInterval(function() {
         if(water <= 180){
             fill.style.borderTop = `${water}px solid rgb(83 191 255)`;
             water++;
-            console.log(water);
+            var fillRect = fill.getBoundingClientRect();
+            var markRect = mark.getBoundingClientRect();
+                let fillValue = fillRect.top;
+                let markValue = markRect.top;
+
+                if(fillValue < markValue){
+                    console.log("NOS FUIMOS");
+                    clearInterval(intervalo);
+                    detenerAnimacion();
+                }
+
+                if(activador){
+                    if(temperatura < 99){
+                        temperatura = temperatura + 1;
+                        waterTemperatur.innerText = `${temperatura} °`;
+                    }
+                }else{
+                    if(temperatura > 0){
+                        temperatura = temperatura - 1;
+                        waterTemperatur.innerText = `${temperatura} °`;
+                    }
+                }
+
         }else{
             waterOut.classList.remove('warmW');
             waterOut.classList.remove('coldW');
@@ -26,15 +57,19 @@ function moreWater(){
      // return intervalo;
 }
 
+//CLICK
 function animarElemento() {
 
     if(activador){
         rotor1.style.transform = 'rotate(60deg)';
         rotor1.style.transition = 'transform 1s';
+        button1.classList.add('botonAnimation')
         waterOut.classList.add('warmW');
+
     }else{
         rotor2.style.transform = 'rotate(-60deg)';
         rotor2.style.transition = 'transform 1s';
+        button2.classList.add('botonAnimation')
         waterOut.classList.add('coldW');
     }
 
@@ -42,7 +77,6 @@ function animarElemento() {
 
 }
 
-  
   button1.addEventListener('mousedown', () => {
     activador = true;
     animarElemento();
@@ -59,6 +93,7 @@ function animarElemento() {
   
   function detenerAnimacion() {
     // Detener la animación
+    
     rotor1.style.transform = 'rotate(0deg)';
     rotor1.style.transition = 'transform 1s';
     rotor2.style.transform = 'rotate(0deg)';
@@ -69,6 +104,10 @@ function animarElemento() {
     document.removeEventListener('touchend', detenerAnimacion);
 
     clearInterval(intervalo);
+
+    //ANIMATIONS FROM CSS
+    button1.classList.remove('botonAnimation');
+    button2.classList.remove('botonAnimation');
     waterOut.classList.remove('warmW');
     waterOut.classList.remove('coldW');
 
@@ -77,6 +116,22 @@ function animarElemento() {
     }
 
 }
+
+
+function coldDown(){
+        cooling = setInterval(function(){
+            if(temperatura > 0){
+                temperatura--;
+            waterTemperatur.innerText = `${temperatura} °`;
+            }else{
+                temperatura == 0;
+            }
+        },1000)
+        
+}
+
+coldDown()
+
 
 //MOBIL CONFIG
 button1.addEventListener('touchstart', () => {
@@ -92,11 +147,5 @@ button1.addEventListener('touchstart', () => {
   
     document.addEventListener('touchend', detenerAnimacion);
   });
-  
 
-/* setTimeout(function() {
-    clearInterval(intervalo);
-    console.log("STOP☺")
-  }, 5000);
 
- */
