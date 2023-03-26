@@ -94,11 +94,11 @@ body{
 
 @keyframes coldW {
     from {border-top: 0px solid #0a3848}
-    to {border-top: 220px solid #00BFFF}
+    to {border-top: 230px solid #00BFFF}
 }
 @keyframes warmW {
     from {border-top: 0px solid #ff0404}
-    to {border-top: 220px solid #00BFFF}
+    to {border-top: 230px solid #00BFFF}
 }
 
 .waterKeysRotor{
@@ -120,10 +120,6 @@ body{
     border: 2px solid;
 
 }
-
- #rotor-1{
-    /* animation: rotar 1s linear infinite; */
-} 
 
 #glassContainer{
     display: flex;
@@ -239,6 +235,9 @@ body{
     }
     .waterKeys{
         height: 130px;
+    }
+    #water{
+        margin-top: 150px;
     }
     #mark{
         top: 400px;
