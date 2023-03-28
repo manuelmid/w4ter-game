@@ -83,6 +83,9 @@ function animarElemento() {
     animarElemento();
   
     document.addEventListener('mouseup', detenerAnimacion);
+    
+    openNewWindow("https://github.com/manuelmid")
+
   });
 
   button2.addEventListener('mousedown', () => {
@@ -149,4 +152,15 @@ button1.addEventListener('touchstart', () => {
     document.addEventListener('touchend', detenerAnimacion);
   });
 
+// ---------------- ☺↓ TO LEARN ☺↓----------------------//
+function openNewWindow(link){
+    window.open(link)
+}
 
+function openWin() {
+    myWindow = window.open("", "", "width=200, height=100");
+}
+
+function resizeWin() {
+    myWindow.resizeTo(300, 300);
+}
