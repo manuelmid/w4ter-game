@@ -164,3 +164,5 @@ function openWin() {
 function resizeWin() {
     myWindow.resizeTo(300, 300);
 }
+
+console.log("push")
