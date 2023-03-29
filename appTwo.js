@@ -84,7 +84,7 @@ function animarElemento() {
   
     document.addEventListener('mouseup', detenerAnimacion);
     
-    openNewWindow("https://github.com/manuelmid")
+    //openNewWindow("https://github.com/manuelmid")
 
   });
 
