@@ -31,7 +31,7 @@ function moreWater(){
                 let markValue = markRect.top;
 
                 if(fillValue < markValue){
-                    //alert("You have reached the limit")
+                    alert("You have reached the limit")
                     clearInterval(intervalo);
                     detenerAnimacion();
                     console.log("NOS FUIMOS");
@@ -165,4 +165,4 @@ function resizeWin() {
     myWindow.resizeTo(300, 300);
 }
 
-console.log("push")
+console.log(screen.pixelDepth)
