@@ -165,4 +165,8 @@ function resizeWin() {
     myWindow.resizeTo(300, 300);
 }
 
-console.log(screen.pixelDepth)
+console.log(screen.pixelDepthgit)
+console.log(screen.availHeight)
+console.log(window.Cache)
+
+// ---------------- ☺↓ TO LEARN ☺↓----------------------//
