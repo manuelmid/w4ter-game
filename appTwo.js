@@ -21,8 +21,11 @@ let temperatura = 30;
 
 
 function moreWater(){
+
     intervalo = setInterval(function() {
+
         if(water <= 180){
+
             fill.style.borderTop = `${water}px solid rgb(83 191 255)`;
             water++;
             var fillRect = fill.getBoundingClientRect();
@@ -31,28 +34,40 @@ function moreWater(){
                 let markValue = markRect.top;
 
                 if(fillValue < markValue){
+
                     alert("You have reached the limit")
                     clearInterval(intervalo);
                     detenerAnimacion();
                     console.log("NOS FUIMOS");
+
                 }
 
                 if(activador){
+
                     if(temperatura < 99){
+
                         temperatura = temperatura + 1;
                         waterTemperatur.innerText = `${temperatura} °`;
+
                     }
+
                 }else{
+
                     if(temperatura > 0){
+
                         temperatura = temperatura - 1;
                         waterTemperatur.innerText = `${temperatura} °`;
+
                     }
                 }
 
         }else{
+            
             waterOut.classList.remove('warmW');
             waterOut.classList.remove('coldW');
+
         }
+
       }, 100);
 
      // return intervalo;
@@ -165,8 +180,27 @@ function resizeWin() {
     myWindow.resizeTo(300, 300);
 }
 
-console.log(screen.pixelDepthgit)
-console.log(screen.availHeight)
+//console.log(screen.pixelDepthgit)
+//console.log(screen.availHeight)
 console.log(window.Cache)
+
+// ---------------- ☺↓ CACHE ☺↓----------------------//
+
+// Abre la caché
+caches.open('mi-cache').then(function(cache) {
+    // Agrega un recurso a la caché
+    cache.add('imgs/glass.png');
+  
+    // Recupera un recurso de la caché
+    cache.match('imgs/glass.png').then(function(response) {
+      if (response) {
+        // Utiliza la respuesta
+        console.log(response);
+      }
+    });
+  });
+
+// ---------------- ☺↓ CACHE ☺↓----------------------//
+
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
