@@ -202,5 +202,15 @@ caches.open('mi-cache').then(function(cache) {
 
 // ---------------- ☺↓ CACHE ☺↓----------------------//
 
+// ---------------- ↓ Local Storage ↓----------------------//
+localStorage.setItem("myCat", "Tom");
+
+const cat = localStorage.getItem("myCat");
+
+localStorage.removeItem("myCat");
+
+localStorage.clear();
+
+// ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
