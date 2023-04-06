@@ -211,6 +211,8 @@ localStorage.removeItem("myCat");
 
 localStorage.clear();
 
+localStorage.key()
+
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
