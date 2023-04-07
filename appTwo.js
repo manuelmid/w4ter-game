@@ -195,7 +195,9 @@ caches.open('mi-cache').then(function(cache) {
     cache.match('imgs/glass.png').then(function(response) {
       if (response) {
         // Utiliza la respuesta
+
         console.log(response);
+
       }
     });
   });
@@ -204,14 +206,12 @@ caches.open('mi-cache').then(function(cache) {
 
 // ---------------- ↓ Local Storage ↓----------------------//
 localStorage.setItem("myCat", "Tom");
-
+localStorage.add()
 const cat = localStorage.getItem("myCat");
 
 localStorage.removeItem("myCat");
 
 localStorage.clear();
-
-localStorage.key()
 
 // ---------------- ↓ Local Storage ↓----------------------//
 
