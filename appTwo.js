@@ -202,6 +202,10 @@ caches.open('mi-cache').then(function(cache) {
     });
   });
 
+  if(window.addEventListener){
+    console.loh(window.addEventListener)
+  }
+
 // ---------------- ☺↓ CACHE ☺↓----------------------//
 
 // ---------------- ↓ Local Storage ↓----------------------//
