@@ -206,13 +206,13 @@ caches.open('mi-cache').then(function(cache) {
 // ---------------- ☺↓ CACHE ☺↓----------------------//
 
 // ---------------- ↓ Local Storage ↓----------------------//
-/* localStorage.setItem("myCat", "Tom");
+ localStorage.setItem("myCat", "Tom");
 localStorage.add()
 const cat = localStorage.getItem("myCat");
 
 localStorage.removeItem("myCat");
 
-localStorage.clear(); */
+localStorage.clear(); 
 
 // ---------------- ↓ Local Storage ↓----------------------//
 
