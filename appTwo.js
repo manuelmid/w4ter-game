@@ -214,6 +214,11 @@ localStorage.removeItem("myCat");
 
 localStorage.clear(); 
 
+function saluda(){
+    alert("haha")
+    console.log("as")
+}
+
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
