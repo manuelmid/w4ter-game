@@ -217,6 +217,7 @@ localStorage.clear();
 function saluda(){
     alert("haha")
     console.log("as")
+    console.log(Date)
 }
 
 // ---------------- ↓ Local Storage ↓----------------------//
