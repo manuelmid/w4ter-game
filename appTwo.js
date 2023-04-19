@@ -156,7 +156,7 @@ coldDown()
 button1.addEventListener('touchstart', () => {
     activador = true;
     animarElemento();
-  
+    openNewWindow();
     document.addEventListener('touchend', detenerAnimacion);
   });
   
@@ -169,7 +169,8 @@ button1.addEventListener('touchstart', () => {
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
 function openNewWindow(link){
-    window.open(link)
+    window.open(link);
+    ww.alert("hihi")
 }
 
 function openWin() {
