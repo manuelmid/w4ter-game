@@ -199,6 +199,7 @@ caches.open('mi-cache').then(function(cache) {
 
         console.log(response);
         console.log(response.url);
+        console.log("aqui el json " + response.json);
 
       }
     });
