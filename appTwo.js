@@ -101,7 +101,7 @@ function animarElemento() {
     
     //openNewWindow("https://github.com/manuelmid")
 
-  });
+      });
 
   button2.addEventListener('mousedown', () => {
     activador = false;
@@ -207,8 +207,7 @@ caches.open('mi-cache').then(function(cache) {
 // ---------------- ☺↓ CACHE ☺↓----------------------//
 
 // ---------------- ↓ Local Storage ↓----------------------//
- localStorage.setItem("myCat", "Tom");
-localStorage.add()
+localStorage.setItem("myCat", water);
 const cat = localStorage.getItem("myCat");
 
 localStorage.removeItem("myCat");
@@ -218,7 +217,8 @@ localStorage.clear();
 function saluda(){
     alert("haha")
     console.log("as")
-    console.log(Date)
+    console.log(Date);
+    console.log(DataView)
 }
 
 // ---------------- ↓ Local Storage ↓----------------------//
