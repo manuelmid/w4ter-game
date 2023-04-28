@@ -221,6 +221,10 @@ function saluda(){
     console.log(DataView)
 }
 
+ var itt = setInterval(function(){
+    alert(water)
+ },500)
+
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
