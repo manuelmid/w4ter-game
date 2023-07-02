@@ -10,14 +10,15 @@ var waterTemperaturValue = parseInt(waterTemperatur.innerText);
 const rotor1 = document.getElementById("rotor-1");
 const rotor2 = document.getElementById("rotor-2");
 
-let water = 20;
+let water;
 let activador = false;
 let intervalo;
 let intervaloOut;
 
 let temperatura = 30;
 
-
+var btn = document.getElementById("tt");
+btn.addEventListener("click",function(){console.log("gg")})
 
 
 function moreWater(){
@@ -156,7 +157,6 @@ coldDown()
 button1.addEventListener('touchstart', () => {
     activador = true;
     animarElemento();
-    openNewWindow();
     document.addEventListener('touchend', detenerAnimacion);
   });
   
@@ -222,8 +222,8 @@ function saluda(){
 }
 
  var itt = setInterval(function(){
-    alert(water)
- },500)
+/*     alert(water)
+ */ },500)
 
 
 // ---------------- ↓ Local Storage ↓----------------------//
