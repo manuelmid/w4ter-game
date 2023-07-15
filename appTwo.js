@@ -40,7 +40,7 @@ function moreWater(){
                     clearInterval(intervalo);
                     detenerAnimacion();
                     console.log("NOS FUIMOS");
-
+                    console.log(water)
                 }
 
                 if(activador){
