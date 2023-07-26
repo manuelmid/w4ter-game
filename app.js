@@ -33,6 +33,7 @@ button2.addEventListener("pressHold", doSomething);
 
     function clickUp(){
       console.log("up!!");
+      console.log("pa arriba!")
     }
 
     function timer() {
