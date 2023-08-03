@@ -80,3 +80,4 @@ var fill = document.querySelector(".fill")
 fill.style.borderTop = "200px solid rgb(255 255 255 / 39%)"
     console.log(fill.style.borderTop)
     
+console.loh("aa");
