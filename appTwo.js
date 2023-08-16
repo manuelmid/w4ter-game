@@ -229,3 +229,5 @@ function saluda(){
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
+
+console.log("working of")
