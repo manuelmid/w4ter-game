@@ -46,26 +46,21 @@ function moreWater(){
                 if(activador){
 
                     if(temperatura < 99){
-
                         temperatura = temperatura + 1;
                         waterTemperatur.innerText = `${temperatura} °`;
-
                     }
 
                 }else{
 
                     if(temperatura > 0){
-
                         temperatura = temperatura - 1;
                         waterTemperatur.innerText = `${temperatura} °`;
-
                     }
                 }
 
         }else{
             
-            waterOut.classList.remove('warmW');
-            waterOut.classList.remove('coldW');
+
 
         }
 
@@ -113,6 +108,7 @@ function animarElemento() {
   
   function detenerAnimacion() {
     // Detener la animación
+    console.log("up")
     
     rotor1.style.transform = 'rotate(0deg)';
     rotor1.style.transition = 'transform 1s';
@@ -183,7 +179,6 @@ function resizeWin() {
 
 //console.log(screen.pixelDepthgit)
 //console.log(screen.availHeight)
-console.log(window.Cache)
 
 // ---------------- ☺↓ CACHE ☺↓----------------------//
 
@@ -229,6 +224,3 @@ function saluda(){
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
-
-console.log("working of")
-console.log("working of")
