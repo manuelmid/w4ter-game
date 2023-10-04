@@ -59,9 +59,7 @@ function moreWater(){
                 }
 
         }else{
-            
-
-
+            console.log("dbg")
         }
 
       }, 100);
