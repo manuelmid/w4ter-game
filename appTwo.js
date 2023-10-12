@@ -59,7 +59,7 @@ function moreWater(){
                 }
 
         }else{
-            console.log("dbg")
+            console.log("dbg");
         }
 
       }, 100);
@@ -217,6 +217,9 @@ function saluda(){
  var itt = setInterval(function(){
 /*     alert(water)
  */ },500)
+
+
+ console.log("MoreWater function - to fix")
 
 
 // ---------------- ↓ Local Storage ↓----------------------//
