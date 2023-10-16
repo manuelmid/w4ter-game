@@ -18,7 +18,7 @@ let intervaloOut;
 let temperatura = 30;
 
 var btn = document.getElementById("tt");
-btn.addEventListener("click",function(){console.log("gg")})
+btn.addEventListener("click",function(){console.log("gg")});
 
 
 function moreWater(){
@@ -35,21 +35,18 @@ function moreWater(){
                 let markValue = markRect.top;
 
                 if(fillValue < markValue){
-
                     alert("You have reached the limit")
                     clearInterval(intervalo);
                     detenerAnimacion();
                     console.log("NOS FUIMOS");
                     console.log(fillValue)
                 }
-
+                //evitar el segundo if aqui
                 if(activador){
-
                     if(temperatura < 99){
                         temperatura = temperatura + 1;
                         waterTemperatur.innerText = `${temperatura} °`;
                     }
-
                 }else{
 
                     if(temperatura > 0){
@@ -145,7 +142,6 @@ function coldDown(){
 }
 
 coldDown()
-
 
 //MOBIL CONFIG
 button1.addEventListener('touchstart', () => {
