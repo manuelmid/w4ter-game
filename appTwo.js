@@ -10,7 +10,7 @@ var waterTemperaturValue = parseInt(waterTemperatur.innerText);
 const rotor1 = document.getElementById("rotor-1");
 const rotor2 = document.getElementById("rotor-2");
 
-let water;
+let water = 40;
 let activador = false;
 let intervalo;
 let intervaloOut;
@@ -35,7 +35,7 @@ function moreWater(){
                 let markValue = markRect.top;
 
                 if(fillValue < markValue){
-                    alert("You have reached the limit")
+                    alert("You have reached the limit u asshole")
                     clearInterval(intervalo);
                     detenerAnimacion();
                     console.log("NOS FUIMOS");
@@ -48,7 +48,6 @@ function moreWater(){
                         waterTemperatur.innerText = `${temperatura} °`;
                     }
                 }else{
-
                     if(temperatura > 0){
                         temperatura = temperatura - 1;
                         waterTemperatur.innerText = `${temperatura} °`;
@@ -56,7 +55,7 @@ function moreWater(){
                 }
 
         }else{
-            console.log("dbg");
+            console.log("pasa esto")
         }
 
       }, 100);
@@ -216,6 +215,7 @@ function saluda(){
 
 
  console.log("MoreWater function - to fix")
+ console.log(water)
 
 
 // ---------------- ↓ Local Storage ↓----------------------//
