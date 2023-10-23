@@ -64,6 +64,8 @@ function moreWater(){
 }
 
 //CLICK
+
+//A mejorar ??
 function animarElemento() {
 
     if(activador){
@@ -82,6 +84,34 @@ function animarElemento() {
     moreWater();
 
 }
+function animarElemento(rotorActivo, rotorInactivo, buttonActivo, buttonInactivo, activador) {
+    const properties = {
+      true: {
+        rotation: '60deg',
+        buttonClass: 'botonAnimation',
+        waterClass: 'warmW',
+      },
+      false: {
+        rotation: '-60deg',
+        buttonClass: 'botonAnimation',
+        waterClass: 'coldW',
+      },
+    };
+  
+    rotorActivo.style.transform = `rotate(${properties[activador].rotation})`;
+    rotorActivo.style.transition = 'transform 1s';
+    buttonActivo.classList.add(properties[activador].buttonClass);
+    waterOut.classList.add(properties[activador].waterClass);
+  
+    rotorInactivo.style.transform = 'rotate(0deg)';
+    buttonInactivo.classList.remove(properties[!activador].buttonClass);
+    waterOut.classList.remove(properties[!activador].waterClass);
+  
+    moreWater();
+  }
+  
+
+//A mejorar ??
 
   button1.addEventListener('mousedown', () => {
     activador = true;
