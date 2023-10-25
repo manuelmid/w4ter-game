@@ -251,3 +251,7 @@ function saluda(){
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
+
+
+/*WORKIN*/
+console.log("working on the 3d stool")
