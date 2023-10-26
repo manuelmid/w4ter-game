@@ -254,4 +254,7 @@ function saluda(){
 
 
 /*WORKIN*/
-console.log("working on the 3d stool")
+
+function trabajando(threeDi){
+  console.log(threeDi)
+}
