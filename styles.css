@@ -126,7 +126,7 @@ body{
     align-items: flex-end;
     justify-content: center;
 
-    height: ;  
+/*     height: 200px;   */
     width: 200px;
     
 } 
@@ -148,7 +148,6 @@ body{
     position: absolute;
     padding-bottom: 30px;
     border-top: 20px solid #00BFFF;
-
 
     border-radius: 20%;
     height: 0;

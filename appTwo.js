@@ -84,7 +84,9 @@ function animarElemento() {
     moreWater();
 
 }
-function animarElemento(rotorActivo, rotorInactivo, buttonActivo, buttonInactivo, activador) {
+
+//NEW MEJORA? 
+/* function animarElemento(rotorActivo, rotorInactivo, buttonActivo, buttonInactivo, activador) {
     const properties = {
       true: {
         rotation: '60deg',
@@ -109,7 +111,7 @@ function animarElemento(rotorActivo, rotorInactivo, buttonActivo, buttonInactivo
   
     moreWater();
   }
-  
+   */
 
 //A mejorar ??
 
@@ -239,15 +241,6 @@ function saluda(){
     console.log(DataView)
 }
 
- var itt = setInterval(function(){
-/*     alert(water)
- */ },500)
-
-
- console.log("MoreWater function - to fix")
- console.log(water)
-
-
 // ---------------- ↓ Local Storage ↓----------------------//
 
 // ---------------- ☺↓ TO LEARN ☺↓----------------------//
@@ -255,6 +248,3 @@ function saluda(){
 
 /*WORKIN*/
 
-function trabajando(threeDi){
-  console.log(threeDi)
-}
