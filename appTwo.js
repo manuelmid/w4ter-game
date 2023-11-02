@@ -248,4 +248,7 @@ function saluda(){
 
 /*WORKIN*/
 
-console.log("working")
+var array = ["Trabajando", "En", "La", "Oficina"];
+for(var palabra of array){
+  console.log(palabra)  
+}
