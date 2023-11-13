@@ -251,6 +251,7 @@ function saluda(){
 var array = ["Trabajando", "En", "La", "Oficina"];
 for(var palabra of array){
   console.log(palabra) ;
-  console.log("working of")
+
+  console.log("wrk frd")
 }
 
