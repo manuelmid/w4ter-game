@@ -17,9 +17,9 @@ let intervaloOut;
 
 let temperatura = 30;
 
-var btn = document.getElementById("tt");
+/* var btn = document.getElementById("tt");
 btn.addEventListener("click",function(){console.log("gg")});
-
+ */
 
 function moreWater(){
 
