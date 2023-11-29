@@ -252,6 +252,6 @@ var array = ["Trabajando", "En", "La", "Oficina"];
 for(var palabra of array){
   console.log(palabra) ;
 
-  console.log('wrk frd -intern web')
+  console.log('wrk of - ergo animation')
 }
 
